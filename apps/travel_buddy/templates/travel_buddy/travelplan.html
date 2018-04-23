@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="container">
-        <h5 style="text-align: right"><a href="/logout">Logout</a></h5>
-        <br>
-        <p>Successfully logged in! Welcome, <b>{{user.name}} !</b></p>
+        <h2><a href="/logout">Logout</a></h2>
+       <!-- <br> -->
+        <p>Welcome <b>{{user.name}} !</b></p>
         {% if messages %}
             <ul class="messages">
             {% for message in messages %}
@@ -21,7 +21,7 @@
     </div>
     <div class="container">
         <h4>Your Trip Schedules</h4>
-        <table>
+        <table border=2>
             <thead>
                 <th>Desination</th>
                 <th>Start Date</th>
