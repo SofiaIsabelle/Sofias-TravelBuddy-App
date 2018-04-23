@@ -5,25 +5,18 @@
     <title>Travels</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/theme.css">
   </head>
   <body>
     <div class="container">
-        <h2><a href="/logout">Logout</a></h2>
-       <!-- <br> -->
+       <h3 align="right"><a href="/logout">Logout</a></h3>
         <p>Welcome <b>{{user.name}} !</b></p>
-        {% if messages %}
-            <ul class="messages">
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-            </ul>
-          {% endif %}
     </div>
     <div class="container">
         <h4>Your Trip Schedules</h4>
         <table border=2>
             <thead>
-                <th>Desination</th>
+                <th>Destination</th>
                 <th>Start Date</th>
                 <th>End Date</th>
                 <th>Purpose</th>
@@ -83,12 +76,11 @@
                 </tr>
                     {%endfor%}
                 {%endif%}
-               
-
+            <tr><td><h4 style="text-align: right"><a href="/addplan">Add Travel Plan</a></h4></td></tr>
             </tbody>
         </table>
-        <br>
-     <h5 style="text-align: right"><a href="/addplan">Add Travel Plan</a></h5>
+    
+    <!-- <h4 style="text-align: right"><a href="/addplan">Add Travel Plan</a></h4> -->
     </div>
   </body>
 </html>
