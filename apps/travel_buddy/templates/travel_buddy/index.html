@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Join Our Community</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+       
+    </head>
+    <body>
+        <div class="container">
+            <h2>Login or Register</h2>
+            {% if messages %}
+                <ul class="messages">
+                {% for message in messages %}
+                <li style="color:red">{{ message }}</li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+            <form action="/register" class="col s12" method="POST">
+                {% csrf_token %}
+              <div class="row">
+                <div class="input-field col s6">
+                  <label for="first_name">Name</label>
+                  <input id="first_name" type="text" class="validate" name="name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <label for="username">Username</label>
+                  <input id="username" type="text" class="validate" name="username">
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" class="validate" name="password">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                 <label for="confirm_password">Confirm Password</label>
+                 <input id="password" type="password" class="validate" name="confirm_password">
+                </div>
+              </div>
+              <input type="submit" value="Register" class="waves-effect waves-light btn">
+            </form>
+          </div>
+          <form class="container" action="/login" method="POST">
+             {% csrf_token %}
+              <h2>Login</h2>
+              <div class="row">
+                <div class="input-field col s12">
+                  <label for="username">Username</label>
+                  <input id="username" type="text" class="validate" name="username">
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                 <label for="password">Password</label>
+                  <input id="password" type="password" class="validate" name="password">
+                </div>
+              </div>
+              <input type="submit" value="Login" class="waves-effect waves-light btn">
+          </form>
+    </body>
+</html>
