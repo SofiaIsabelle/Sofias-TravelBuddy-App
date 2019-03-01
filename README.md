@@ -3,3 +3,4 @@
 # and be able to join other users travel plans.
 
 # Sofias-TravelBuddy-App
+# Sofias-TravelBuddy-App
