@@ -1,7 +1,7 @@
-# Python & DJANGO : Travel Buddy Application
-# Create an Application that allows the logged in user to add his travel plans
-# and be able to join other users travel plans.
+# Python & DJANGO : 
+## Sofias-Travel Buddy-App
+### Application that allows the logged in user to add his/her travel plans
+### and be able to join in on  other users travel plans.
+### Social Networking , planning , and arranging trips and occasions.
+### Quick and Simple CRUD app.
 
-# Sofias-TravelBuddy-App
-# Sofias-TravelBuddy-App
-# Sofias-TravelBuddy-App
